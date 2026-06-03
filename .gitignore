@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+
+# Ignorar archivos subidos pero mantener la carpeta con .gitkeep
+uploads/portadas/*
+!uploads/portadas/.gitkeep

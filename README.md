@@ -211,8 +211,7 @@ libreria-api/
 └── package.json                    # Dependencias y scripts del proyecto
 ```
 
-> **Sobre `node_modules/`:** esta carpeta no está en el repositorio y eso es intencional. Es el estándar en todos los proyectos Node.js — puede pesar cientos de MB y contiene archivos generados automáticamente que no tienen sentido versionar. El archivo `package.json` cumple el rol de registrar qué dependencias necesita el proyecto, y `npm install` las descarga cada vez que alguien clona el repo. Cualquier desarrollador que clone este proyecto deberá ejecutar `npm install` antes de iniciarlo.
->
+
 > **Sobre `.env`:** este archivo tampoco está en el repositorio porque contiene credenciales reales (usuario y contraseña de la base de datos). Está excluido mediante `.gitignore`. En su lugar, el repositorio incluye `.env.example` con la estructura de variables necesarias pero sin valores reales. Cada desarrollador crea su propio `.env` local a partir de ese ejemplo y completa con sus propios datos.
 
 ---
